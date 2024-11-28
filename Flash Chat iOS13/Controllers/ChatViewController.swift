@@ -39,7 +39,7 @@ class ChatViewController: UIViewController {
     
     func loadMessages(){
         //取得資料
-        //addSnapshotListener: each time the contents change, another call updates the document snapshot
+        // SnapshotListener: each time the contents change, another call updates the document snapshot
         //order(by: String): 排序
         db.collection(K.FStore.collectionName).order(by: K.FStore.dateField).addSnapshotListener { [self] (querySnapshot, error) in
             

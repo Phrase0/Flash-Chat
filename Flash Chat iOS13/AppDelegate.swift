@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //不要有鍵盤的送出按鈕
         IQKeyboardManager.shared.enableAutoToolbar = false
         //點擊任何一個地方，鍵盤消失
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.resignOnTouchOutside = true
         
         
         return true
